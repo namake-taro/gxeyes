@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-xeyes">
+  <schema id="org.gnome.shell.extensions.gnome-xeyes"
+          path="/org/gnome/shell/extensions/gnome-xeyes/">
+
+    <!-- サイズ設定 -->
+    <key type="i" name="eye-width">
+      <default>20</default>
+      <summary>Eye width in pixels</summary>
+      <description>Width of each eye</description>
+    </key>
+
+    <key type="i" name="eye-height">
+      <default>24</default>
+      <summary>Eye height in pixels</summary>
+      <description>Height of each eye (fits in top bar)</description>
+    </key>
+
+    <key type="i" name="eye-spacing">
+      <default>4</default>
+      <summary>Spacing between eyes</summary>
+      <description>Gap between left and right eye in pixels</description>
+    </key>
+
+    <key type="d" name="pupil-ratio">
+      <default>0.35</default>
+      <summary>Pupil size ratio</summary>
+      <description>Pupil radius as a ratio of eye size (0.1 to 0.5)</description>
+    </key>
+
+    <!-- パフォーマンス設定 -->
+    <key type="i" name="update-interval">
+      <default>100</default>
+      <summary>Update interval in milliseconds</summary>
+      <description>How often to update eye positions (100ms = 10 FPS)</description>
+    </key>
+
+    <!-- 色設定 -->
+    <key type="s" name="eye-color">
+      <default>'rgba(255, 255, 255, 1.0)'</default>
+      <summary>Eye color</summary>
+      <description>Color of the eyeball (white part)</description>
+    </key>
+
+    <key type="s" name="pupil-color">
+      <default>'rgba(0, 0, 0, 1.0)'</default>
+      <summary>Pupil color</summary>
+      <description>Color of the pupil</description>
+    </key>
+
+    <key type="s" name="outline-color">
+      <default>'rgba(0, 0, 0, 0.8)'</default>
+      <summary>Outline color</summary>
+      <description>Color of the eye outline</description>
+    </key>
+
+  </schema>
+</schemalist>
