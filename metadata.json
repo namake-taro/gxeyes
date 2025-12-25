@@ -1,9 +1,9 @@
 {
-  "uuid": "gnome-xeyes@namake-taro.github.io",
+  "uuid": "xeyes@namake-taro.github.io",
   "name": "GNOME XEyes",
   "description": "xeyes-style eye tracker for GNOME Shell top bar - eyes follow your mouse cursor",
   "shell-version": ["45", "46", "47", "48"],
-  "settings-schema": "org.gnome.shell.extensions.gnome-xeyes",
+  "settings-schema": "org.gnome.shell.extensions.xeyes",
   "url": "https://github.com/namake-taro/gnome-xeyes",
   "version": 1
 }

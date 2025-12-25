@@ -40,14 +40,14 @@ cd gnome-xeyes
 2. Copy to extensions directory
 
 ```bash
-mkdir -p ~/.local/share/gnome-shell/extensions/gnome-xeyes@namake-taro.github.io
-cp -r ./* ~/.local/share/gnome-shell/extensions/gnome-xeyes@namake-taro.github.io/
+mkdir -p ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io
+cp -r ./* ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io/
 ```
 
 3. Compile schemas
 
 ```bash
-glib-compile-schemas ~/.local/share/gnome-shell/extensions/gnome-xeyes@namake-taro.github.io/schemas/
+glib-compile-schemas ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io/schemas/
 ```
 
 4. Restart GNOME Shell
@@ -57,7 +57,7 @@ glib-compile-schemas ~/.local/share/gnome-shell/extensions/gnome-xeyes@namake-ta
 5. Enable the extension
 
 ```bash
-gnome-extensions enable gnome-xeyes@namake-taro.github.io
+gnome-extensions enable xeyes@namake-taro.github.io
 ```
 
 Or enable it from the Extensions app.
@@ -67,7 +67,7 @@ Or enable it from the Extensions app.
 Open settings from the Extensions app, or run:
 
 ```bash
-gnome-extensions prefs gnome-xeyes@namake-taro.github.io
+gnome-extensions prefs xeyes@namake-taro.github.io
 ```
 
 ### Settings
@@ -86,8 +86,8 @@ gnome-extensions prefs gnome-xeyes@namake-taro.github.io
 ## Uninstall
 
 ```bash
-gnome-extensions disable gnome-xeyes@namake-taro.github.io
-rm -rf ~/.local/share/gnome-shell/extensions/gnome-xeyes@namake-taro.github.io
+gnome-extensions disable xeyes@namake-taro.github.io
+rm -rf ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io
 ```
 
 ## License

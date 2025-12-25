@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="gnome-xeyes">
-  <schema id="org.gnome.shell.extensions.gnome-xeyes"
-          path="/org/gnome/shell/extensions/gnome-xeyes/">
+<schemalist gettext-domain="xeyes">
+  <schema id="org.gnome.shell.extensions.xeyes"
+          path="/org/gnome/shell/extensions/xeyes/">
 
-    <!-- サイズ設定 -->
     <key type="i" name="eye-width">
       <default>20</default>
       <summary>Eye width in pixels</summary>
@@ -28,14 +27,12 @@
       <description>Pupil radius as a ratio of eye size (0.1 to 0.5)</description>
     </key>
 
-    <!-- パフォーマンス設定 -->
     <key type="i" name="update-interval">
       <default>100</default>
       <summary>Update interval in milliseconds</summary>
       <description>How often to update eye positions (100ms = 10 FPS)</description>
     </key>
 
-    <!-- 色設定 -->
     <key type="s" name="eye-color">
       <default>'rgba(255, 255, 255, 1.0)'</default>
       <summary>Eye color</summary>
