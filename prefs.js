@@ -3,27 +3,21 @@ import Gtk from 'gi://Gtk';
 
 import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-/**
- * XEyesPreferences - 設定画面
- */
-export default class XEyesPreferences extends ExtensionPreferences {
+export default class GXEyesPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         const settings = this.getSettings();
 
-        // メインページ
         const page = new Adw.PreferencesPage({
             title: _('General'),
             icon_name: 'preferences-system-symbolic',
         });
         window.add(page);
 
-        // === サイズ設定グループ ===
         const sizeGroup = new Adw.PreferencesGroup({
             title: _('Size Settings'),
         });
         page.add(sizeGroup);
 
-        // 目の幅
         const eyeWidthRow = new Adw.SpinRow({
             title: _('Eye Width'),
             subtitle: _('Width of each eye in pixels'),
@@ -39,7 +33,6 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         sizeGroup.add(eyeWidthRow);
 
-        // 目の高さ
         const eyeHeightRow = new Adw.SpinRow({
             title: _('Eye Height'),
             subtitle: _('Height of each eye in pixels'),
@@ -55,7 +48,6 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         sizeGroup.add(eyeHeightRow);
 
-        // 目の間隔
         const eyeSpacingRow = new Adw.SpinRow({
             title: _('Eye Spacing'),
             subtitle: _('Space between eyes in pixels'),
@@ -71,7 +63,6 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         sizeGroup.add(eyeSpacingRow);
 
-        // 瞳の比率
         const pupilRatioRow = new Adw.SpinRow({
             title: _('Pupil Size Ratio'),
             subtitle: _('Pupil size relative to eye (0.1 - 0.5)'),
@@ -88,19 +79,17 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         sizeGroup.add(pupilRatioRow);
 
-        // === パフォーマンス設定グループ ===
         const perfGroup = new Adw.PreferencesGroup({
             title: _('Performance'),
         });
         page.add(perfGroup);
 
-        // 更新間隔（ミリ秒）
         const intervalRow = new Adw.SpinRow({
-            title: _('Update Interval'),
-            subtitle: _('Milliseconds between updates (lower = smoother)'),
+            title: _('Pointer Tracking Interval'),
+            subtitle: _('Callback interval when pointer moves (ms). No callbacks while idle.'),
             adjustment: new Gtk.Adjustment({
-                lower: 16,    // ~60 FPS
-                upper: 500,   // 2 FPS
+                lower: 16,
+                upper: 500,
                 step_increment: 10,
                 value: settings.get_int('update-interval'),
             }),
@@ -110,13 +99,11 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         perfGroup.add(intervalRow);
 
-        // === 色設定グループ ===
         const colorGroup = new Adw.PreferencesGroup({
             title: _('Colors'),
         });
         page.add(colorGroup);
 
-        // 白目の色
         const eyeColorRow = new Adw.EntryRow({
             title: _('Eye Color'),
         });
@@ -126,7 +113,6 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         colorGroup.add(eyeColorRow);
 
-        // 瞳の色
         const pupilColorRow = new Adw.EntryRow({
             title: _('Pupil Color'),
         });
@@ -136,7 +122,6 @@ export default class XEyesPreferences extends ExtensionPreferences {
         });
         colorGroup.add(pupilColorRow);
 
-        // アウトラインの色
         const outlineColorRow = new Adw.EntryRow({
             title: _('Outline Color'),
         });

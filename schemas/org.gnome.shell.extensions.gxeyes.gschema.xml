@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="xeyes">
-  <schema id="org.gnome.shell.extensions.xeyes"
-          path="/org/gnome/shell/extensions/xeyes/">
+<schemalist gettext-domain="gxeyes">
+  <schema id="org.gnome.shell.extensions.gxeyes"
+          path="/org/gnome/shell/extensions/gxeyes/">
 
     <key type="i" name="eye-width">
       <default>20</default>

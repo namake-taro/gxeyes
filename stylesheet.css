@@ -1,6 +1,5 @@
-/* GNOME XEyes Extension Stylesheet */
+/* GXEyes Extension Stylesheet */
 
-/* 目のウィジェット領域 */
-.xeyes-widget {
+.gxeyes-widget {
     margin: 1px 0;
 }

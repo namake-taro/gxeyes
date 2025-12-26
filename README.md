@@ -1,13 +1,16 @@
-# GNOME XEyes
+# GXEyes (GNOME shell extension)
 
-A GNOME Shell extension that recreates the classic UNIX `xeyes` command. Displays eyes in the top bar that follow your mouse cursor.
+[![GNOME Shell](https://img.shields.io/badge/GNOME%20Shell-45%20%7C%2046%20%7C%2047%20%7C%2048-blue)](https://extensions.gnome.org/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+**GXEyes** is a GNOME Shell extension that recreates the classic UNIX `xeyes` command. It displays eyes in the top bar that follow your mouse cursor in real-time.
 
 ![Screenshot](./screenshot.png)
 
 ## Features
 
 - Two eyes that track your mouse pointer in real-time
-- Resource-efficient design (automatically pauses updates when idle)
+- Event-driven design using PointerWatcher (zero CPU usage when mouse is idle)
 - Customizable appearance via settings
   - Eye size and spacing
   - Pupil size ratio
@@ -23,7 +26,7 @@ A GNOME Shell extension that recreates the classic UNIX `xeyes` command. Display
 ### From GNOME Extensions (Recommended)
 
 <!-- Add URL after publishing
-Install with one click from [GNOME Extensions](https://extensions.gnome.org/extension/XXXX/gnome-xeyes/).
+Install with one click from [GNOME Extensions](https://extensions.gnome.org/extension/XXXX/gxeyes/).
 -->
 
 *Coming soon*
@@ -33,21 +36,21 @@ Install with one click from [GNOME Extensions](https://extensions.gnome.org/exte
 1. Clone the repository
 
 ```bash
-git clone https://github.com/namake-taro/gnome-xeyes.git
-cd gnome-xeyes
+git clone https://github.com/namake-taro/gxeyes.git
+cd gxeyes
 ```
 
 2. Copy to extensions directory
 
 ```bash
-mkdir -p ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io
-cp -r ./* ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io/
+mkdir -p ~/.local/share/gnome-shell/extensions/gxeyes@namake-taro.github.io
+cp -r ./* ~/.local/share/gnome-shell/extensions/gxeyes@namake-taro.github.io/
 ```
 
 3. Compile schemas
 
 ```bash
-glib-compile-schemas ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io/schemas/
+glib-compile-schemas ~/.local/share/gnome-shell/extensions/gxeyes@namake-taro.github.io/schemas/
 ```
 
 4. Restart GNOME Shell
@@ -57,7 +60,7 @@ glib-compile-schemas ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.git
 5. Enable the extension
 
 ```bash
-gnome-extensions enable xeyes@namake-taro.github.io
+gnome-extensions enable gxeyes@namake-taro.github.io
 ```
 
 Or enable it from the Extensions app.
@@ -67,7 +70,7 @@ Or enable it from the Extensions app.
 Open settings from the Extensions app, or run:
 
 ```bash
-gnome-extensions prefs xeyes@namake-taro.github.io
+gnome-extensions prefs gxeyes@namake-taro.github.io
 ```
 
 ### Settings
@@ -86,8 +89,8 @@ gnome-extensions prefs xeyes@namake-taro.github.io
 ## Uninstall
 
 ```bash
-gnome-extensions disable xeyes@namake-taro.github.io
-rm -rf ~/.local/share/gnome-shell/extensions/xeyes@namake-taro.github.io
+gnome-extensions disable gxeyes@namake-taro.github.io
+rm -rf ~/.local/share/gnome-shell/extensions/gxeyes@namake-taro.github.io
 ```
 
 ## License
