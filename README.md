@@ -25,11 +25,7 @@
 
 ### From GNOME Extensions (Recommended)
 
-<!-- Add URL after publishing
-Install with one click from [GNOME Extensions](https://extensions.gnome.org/extension/XXXX/gxeyes/).
--->
-
-*Coming soon*
+Install with one click from [GNOME Extensions](https://extensions.gnome.org/extension/9066/gxeyes/).
 
 ### Manual Installation
 
