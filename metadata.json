@@ -2,7 +2,7 @@
   "uuid": "gxeyes@namake-taro.github.io",
   "name": "GXEyes",
   "description": "xeyes-style eye tracker for GNOME Shell top bar - eyes follow your mouse cursor",
-  "shell-version": ["45", "46", "47", "48"],
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
   "settings-schema": "org.gnome.shell.extensions.gxeyes",
   "url": "https://github.com/namake-taro/gxeyes",
   "version": 1

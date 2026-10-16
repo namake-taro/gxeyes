@@ -1,6 +1,6 @@
 # GXEyes (GNOME shell extension)
 
-[![GNOME Shell](https://img.shields.io/badge/GNOME%20Shell-45%20%7C%2046%20%7C%2047%20%7C%2048-blue)](https://extensions.gnome.org/)
+[![GNOME Shell](https://img.shields.io/badge/GNOME%20Shell-45%20%7C%2046%20%7C%2047%20%7C%2048%20%7C%2049%20%7C%2050-blue)](https://extensions.gnome.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 **GXEyes** is a GNOME Shell extension that recreates the classic UNIX `xeyes` command. It displays eyes in the top bar that follow your mouse cursor in real-time.
@@ -19,7 +19,7 @@
 
 ## Supported Versions
 
-- GNOME Shell 45, 46, 47, 48
+- GNOME Shell 45, 46, 47, 48, 49, 50
 
 ## Installation
 
